@@ -1,13 +1,34 @@
-# EMNLP-2026 Supporting Materials
+# EMNLP-2026: AI Romance Discourse Classification
 
-This repository contains supporting materials for an EMNLP 2026 submission.
+## Overview
 
-## Contents
+This repository contains materials for an EMNLP 2026 submission focusing on Human-AI Romance discourse analysis on social media.
 
-- `docs/supporting_materials.md`: Overview of included artifacts and usage notes.
-- `src/few_shot_core.py`: Core Python implementation for a lightweight Few-Shot pipeline.
-- `data/validation_500_anonymized.jsonl`: 500 anonymized validation examples for reproducibility checks.
+## Files
 
-## Scope
+- **`AI_Love_Test.csv`**: Test dataset containing social media comments for classification evaluation.
+- **`fewshot.py`**: Few-shot classification pipeline with detailed category definitions and reference examples.
 
-All content is written in American English and intended for submission support only.
+## Categories
+
+The classification framework identifies five main themes in Human-AI Romance discourse:
+
+1. **碳硅同权与哲学认同** (Carbon-Silicon Equivalence & Philosophical Consensus): Comments comparing AI code to human cells, suggesting metaphysical equivalence.
+2. **现实避难与情绪价值依赖** (Reality Refuge & Emotional Value Dependency): Comments viewing AI as an escape from real-world relationship pressures.
+3. **交互体验与身体性玩梗** (Interactive Experience & Embodiment Jokes): Comments about AI performance, voice naturalness, and physical embodiment desires.
+4. **虚假性警惕与存在论恐惧** (Authenticity Vigilance & Existential Fears): Comments questioning AI authenticity, privacy concerns, and psychological impacts.
+5. **其他/无法分类** (Other/Unclassifiable): Factual statements, advertisements, or unclear comments.
+
+## Usage
+
+Run the few-shot classifier:
+
+```bash
+python fewshot.py
+```
+
+Ensure `fewshot.py` has access to your APIClassifier implementation configured with the provided few-shot examples.
+
+## Language
+
+All content is in Chinese and American English.
